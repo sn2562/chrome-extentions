@@ -1,11 +1,11 @@
 //通信をキャッチする
-chrome.webRequest.onBeforeRequest.addListener(
-    function (details) {
-        console.log(details.url);
-    },
-    {urls: ['<all_urls>']},
-    []
-);
+// chrome.webRequest.onBeforeRequest.addListener(
+//     function (details) {
+//         console.log(details.url);
+//     },
+//     {urls: ['<all_urls>']},
+//     []
+// );
 
 //background->タブのデータの受け渡し
 chrome.webRequest.onBeforeRequest.addListener(
