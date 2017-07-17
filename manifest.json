@@ -7,12 +7,17 @@
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
     },
-    "permissions": ["tabs"],
+    "permissions": [
+        "http://tnk47.ameba.jp/dice/*",
+        "webRequest",
+        "tabs"
+    ],
     "content_scripts": [
         {
             "matches": ["http://tnk47.ameba.jp/dice/*"],
             "css": ["style.css"],
-            "js": ["jquery.js", "myscript.js"]
+            "js": ["jquery.js", "myscript.js"],
+            "run_at": "document_start"
         }
     ],
     "browser_action": {
@@ -23,6 +28,11 @@
         },
         "default_title": "Auto dice",
         "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
     },
     "manifest_version": 2
 }

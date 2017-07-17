@@ -1,3 +1,10 @@
+//backgroundからのメッセージを受け取る
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  console.log(message);
+});
+
+
+
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         switch (request.type) {
