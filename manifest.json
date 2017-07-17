@@ -13,5 +13,14 @@
             "css": ["style.css"],
             "js": ["jquery.js", "myscript.js"]
         }
-    ]
+    ],
+    "browser_action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "24": "icons/icon48.png",
+            "32": "icons/icon128.png"
+        },
+        "default_title": "Auto dice",
+        "default_popup": "popup.html"
+    }
 }
