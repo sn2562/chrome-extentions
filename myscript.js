@@ -1,7 +1,15 @@
+$(function() {
+    $('body').css('background', '#dddddd');
+
+    map_selection();
+
+});
+
 //backgroundからのメッセージを受け取る
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   console.log("myscript ",message.url);
 });
+
 
 //
 //
